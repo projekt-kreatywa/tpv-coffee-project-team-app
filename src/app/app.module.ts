@@ -3,6 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
+import { AngularFireModule } from 'angularfire2';
+import { firebaseConfig } from '../app/config/firebase.config';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -12,7 +20,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    FlexLayoutModule.forRoot(),
+    MaterialModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

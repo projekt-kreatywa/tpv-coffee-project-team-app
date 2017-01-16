@@ -3,31 +3,31 @@
     "version": "1.0.0-beta.24",
     "name": "tpv-coffee-project-team-app"
   },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.json",
-      "prefix": "app",
-      "mobile": false,
-      "styles": [
-        "styles.scss"
-      ],
-      "scripts": [],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+  "apps": [{
+    "root": "src",
+    "outDir": "dist",
+    "assets": [
+      "assets",
+      "favicon.ico"
+    ],
+    "index": "index.html",
+    "main": "main.ts",
+    "test": "test.ts",
+    "tsconfig": "tsconfig.json",
+    "prefix": "app",
+    "mobile": false,
+    "styles": [
+      "styles/styles.scss"
+    ],
+    "scripts": [
+      "../node_modules/hammerjs/hammer.min.js"
+    ],
+    "environments": {
+      "source": "environments/environment.ts",
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
     }
-  ],
+  }],
   "addons": [],
   "packages": [],
   "e2e": {
