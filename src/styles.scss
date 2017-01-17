@@ -58,10 +58,9 @@ h2 {
     text-transform: uppercase;
     font-size: .8em;
     color: #3B8598;
-}
-
-#goback span {
-    font-size: 1em;
+    span {
+        font-size: 1em;
+    }
 }
 
 .loading {
@@ -74,17 +73,16 @@ h2 {
     top: 50%;
     margin-top: -20px;
     border-radius: 50%;
-}
-
-.loading:after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 10px;
-    background: #E2E4E6;
-    top: 10px;
-    left: -5px;
-    animation: spin 1.2s infinite;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        background: #E2E4E6;
+        top: 10px;
+        left: -5px;
+        animation: spin 1.2s infinite;
+    }
 }
 
 @keyframes spin {
