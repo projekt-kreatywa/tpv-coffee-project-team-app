@@ -12,10 +12,18 @@ import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../app/config/firebase.config';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
+import { SignupComponent } from './signup/signup.component';
+import { MembersComponent } from './members/members.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    EmailComponent,
+    SignupComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
