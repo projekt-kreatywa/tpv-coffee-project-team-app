@@ -1,0 +1,19 @@
+// /* You can add global styles to this file, and also import other style files */
+// @import 'settings';
+// // this is the main scss file! only @import and comments!
+// // 1.Base
+// @import '_base/config',
+// '_base/presets',
+// '_base/icons';
+// // vendor
+// @import '../../node_modules//foundation-sites/scss/foundation';
+// @include foundation-everything(true);
+// body {
+//     background-image: url(../assets/export-001/svg/cleaned/horiz-image-01.svg);
+//     background-position: center center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     font-family: $app-main-font;
+//     font-weight: 400 700;
+// }

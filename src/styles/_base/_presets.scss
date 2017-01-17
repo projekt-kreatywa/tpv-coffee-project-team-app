@@ -1,0 +1,63 @@
+// 1.Config
+// 2.Base
+html {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+body {
+    background-image: url(../assets/bde8f363b79.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: $app-main-font;
+    font-weight: 400 700;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $app-main-font;
+    font-size: $subnav-font-size + 0.5rem;
+    color: #474747;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+h4,
+h5 {
+    font-family: $app-main-font;
+    font-size: $subnav-font-size + 0.2rem;
+    color: #474747;
+    text-transform: none;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+p {
+    font-family: $app-main-font;
+    color: #474747;
+}
+
+.app-body {
+    text-align: center;
+    background: $app-body-bg;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    padding-top: $header-height;
+    padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
+    .headline {
+        color: #000000;
+    }
+}
+
+// Default radius for button.
+$button-radius: 50 !default;
+// Default fill for button. Is either solid or hollow.
+$button-fill: hollow !default;
+// Default font size for button.
+$button-font-size: 1.9rem !default;
