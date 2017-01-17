@@ -12,8 +12,8 @@ import { moveIn } from '../router.animations';
     '[@moveIn]': ''
   }
 })
-export class LoginComponent implements OnInit {
 
+export class LoginComponent implements OnInit {
 
   error: any;
 
@@ -27,8 +27,8 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+    // Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    // Add 'implements OnInit' to the class.
 
   }
 
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
       }).catch(
       (err) => {
         this.error = err;
-      })
+      });
   }
 
   loginGoogle() {
@@ -55,7 +55,8 @@ export class LoginComponent implements OnInit {
       }).catch(
       (err) => {
         this.error = err;
-      })
+      });
 
   }
+}
 

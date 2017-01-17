@@ -11,6 +11,9 @@ import 'hammerjs';
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../app/config/firebase.config';
 
+import { AuthGuard } from './auth.service';
+import { routes } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
@@ -31,9 +34,10 @@ import { MembersComponent } from './members/members.component';
     HttpModule,
     FlexLayoutModule.forRoot(),
     MaterialModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    routes
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,10 +2,12 @@
   "name": "tpv-coffee-project-team-app",
   "version": "1.0.0",
   "author": "rafszul <rafszul@gmail.com> (http://rafszul.projekt-kreatywa.com/)",
-  "contributors": [{
-    "name": "lukasz szulczewski",
-    "email": "lukas.coffee.wine@gmail.com "
-  }],
+  "contributors": [
+    {
+      "name": "lukasz szulczewski",
+      "email": "lukas.coffee.wine@gmail.com "
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -65,6 +67,7 @@
     "protractor": "~4.0.13",
     "ts-node": "1.2.1",
     "tslint": "^4.0.2",
+    "tslint-eslint-rules": "^3.2.3",
     "typescript": "~2.0.3"
   }
 }

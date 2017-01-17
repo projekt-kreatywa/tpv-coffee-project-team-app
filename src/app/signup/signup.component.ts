@@ -33,7 +33,7 @@ export class SignupComponent implements OnInit {
       }).then(
         (success) => {
           console.log(success);
-          this.router.navigate(['/login'])
+          this.router.navigate(['/login']);
         }).catch(
         (err) => {
           console.log(err);
@@ -41,4 +41,5 @@ export class SignupComponent implements OnInit {
         });
     }
   }
+}
 

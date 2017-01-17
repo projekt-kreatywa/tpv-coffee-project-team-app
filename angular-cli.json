@@ -6,8 +6,7 @@
   "apps": [{
     "root": "src",
     "outDir": "dist",
-    "assets": [
-      "assets",
+    "assets": ["assets",
       "favicon.ico"
     ],
     "index": "index.html",
@@ -16,12 +15,8 @@
     "tsconfig": "tsconfig.json",
     "prefix": "app",
     "mobile": false,
-    "styles": [
-      "styles/styles.scss"
-    ],
-    "scripts": [
-      "../node_modules/hammerjs/hammer.min.js"
-    ],
+    "styles": ["styles.scss"],
+    "scripts": ["../node_modules/hammerjs/hammer.min.js"],
     "environments": {
       "source": "environments/environment.ts",
       "dev": "environments/environment.ts",
