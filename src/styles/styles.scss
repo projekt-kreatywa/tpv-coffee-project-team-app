@@ -12,10 +12,10 @@
 // 2.Layouts
 @import '_layouts/l-grid',
 '_layouts/l-default';
+@import '_layouts/m-header.scss';
+@import '_layouts/m-footer.scss';
 // 3.Modules
 @import '_modules/m-accordions';
-@import '_modules/m-header.scss';
-@import '_modules/m-footer.scss';
 @import '_modules/c_login.scss';
 @import '_modules/_c_members.scss';
 // !!! shame !!! ///
