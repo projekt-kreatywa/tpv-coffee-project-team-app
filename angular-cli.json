@@ -15,8 +15,13 @@
     "tsconfig": "tsconfig.json",
     "prefix": "app",
     "mobile": false,
-    "styles": ["styles.scss"],
-    "scripts": ["../node_modules/hammerjs/hammer.min.js"],
+    "styles": ["../node_modules/foundation-sites/dist/css/foundation-flex.css",
+      "styles.scss"
+    ],
+    "scripts": ["../node_modules/hammerjs/hammer.min.js",
+      "../node_modules/foundation-sites/vendor/jquery/dist/jquery.min.js",
+      "../node_modules/foundation-sites/dist/js/foundation.min.js"
+    ],
     "environments": {
       "source": "environments/environment.ts",
       "dev": "environments/environment.ts",

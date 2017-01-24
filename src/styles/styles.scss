@@ -3,8 +3,8 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 // this is the main scss file! only @import and comments!
-// @import '../../node_modules//foundation-sites/scss/foundation';
-// @include foundation-everything(true);
+@import '../../node_modules//foundation-sites/scss/foundation';
+@include foundation-everything(true);
 // 1.Base
 @import '_base/config',
 '_base/presets',
@@ -18,5 +18,6 @@
 @import '_modules/m-accordions';
 @import '_modules/c_login.scss';
 @import '_modules/_c_members.scss';
+@import '_modules/_c-home.scss';
 // !!! shame !!! ///
 @import '_shame/_c_app.scss'
