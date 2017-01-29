@@ -42,6 +42,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
+    "@types/foundation-sites": "^6.1.28",
     "angularfire2": "^2.0.0-beta.7",
     "core-js": "^2.4.1",
     "firebase": "^3.6.5",

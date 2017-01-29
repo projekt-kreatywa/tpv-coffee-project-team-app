@@ -6,10 +6,10 @@ import { moveIn, fallIn } from '../router.animations';
   selector: 'app-email',
   templateUrl: './email.component.html',
   styleUrls: ['./email.component.scss'],
-  animations: [moveIn(), fallIn()],
-  host: {
-    '[@moveIn]': ''
-  }
+  animations: [moveIn(), fallIn()]
+  // host: {
+  //   '[@moveIn]': ''
+  // }
 }
 
 ) export class EmailComponent implements OnInit {

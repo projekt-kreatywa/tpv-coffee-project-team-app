@@ -1,34 +1,19 @@
-import {
-  Component,
-  OnInit
-}
+import { Component, OnInit } from '@angular/core';
+import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { Router } from '@angular/router';
+import { moveIn, fallIn } from '../router.animations';
 
-  from '@angular/core';
-import {
-  AngularFire,
-  AuthProviders,
-  AuthMethods
-}
-
-  from 'angularfire2';
-import {
-  Router
-}
-
-  from '@angular/router';
-import {
-  moveIn,
-  fallIn
-}
-
-  from '../router.animations';
 @Component({
-  selector: 'app-signup', templateUrl: './signup.component.html', styleUrls: ['./signup.component.scss'], animations: [moveIn(), fallIn()], host: {
-    '[@moveIn]': ''
-  }
-}
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.scss'],
+  animations: [moveIn(), fallIn()]
+  // host: {
+  //   '[@moveIn]': ''
+  // }
+})
 
-) export class SignupComponent implements OnInit {
+export class SignupComponent implements OnInit {
   state: string = '';
   error: any;
   constructor(public af: AngularFire, private router: Router) { }
