@@ -1,33 +1,68 @@
 # TpvCoffeeProjectTeamApp
 
-is a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
-[google material design](https://www.google.com/design/spec/material-design/introduction.html) for the gang at the peanut vendor coffee project
+
+
+is a progressive web app built with [angular2](https://angular.io/) + 
+[google material design](https://www.google.com/design/spec/material-design/introduction.html) + foundation and + [firebase](https://firebase.google.com/) real time database.
+
+the app is a small scale communication hub for individuals and groups of professionals working together on projects that require several people being involved. for this purpose it is fitted not only with chat and bulletin board but also with more advanced project management features.
+
+these include:
+- calendar,
+- to-do lists,
+- user management features,
+- form's submission interfaces,
+- real-time database,
+- responsive and blazing fast web app,
+- which can be viewed as standard website in any web browser
+- but also could be downloaded onto any device and work as native, mobile or desktop application.
+
+the app was developed by rafszul of projekt:kreatywa for lukas, manager of and head barista at the peanut vendor coffee project a speciality coffee shop based by the victoria park in hackney, london, uk.
 
 ---
 
-[![](https://raw.githubusercontent.com/projekt-kreatywa/coffee-project/master/src/assets/TPV-TCP-logo.png)](dev mode - sorry folks)
+[![](https://tpv-coffee-project-team-app.firebaseapp.com/assets/__pckg/source-code-001-header__3x.jpg)](https://tpv-coffee-project-team-app.firebaseapp.com/home)
 
-currently the application lives at [dev mode - sorry folks](dev mode - sorry folks)
+currently the application lives at [tpv-coffee-project-team-app.firebaseapp.com](https://tpv-coffee-project-team-app.firebaseapp.com/)
 
 ---
 
-## table of contents
- * [what is this](#what-is-this)
- * [demo](#demo)
- * [used libraries, guides, etc.](#used-libraries-guides-etc)
-   * [libraries](#libraries)
-   * [guides](#guides)
-   * [other resources](#other-resources)
- * [installation](#installation)
-   * [configuration](#configuration)
-   * [firebase](#firebase)
- * [development](#development)
- * [tests](#tests)
-   * [unit tests](#unit-tests)
-   * [e2e tests](#e2e-tests)
- * [build](#build)
- * [author](#author)
- * [license](#license)
+<!-- TOC -->
+
+- [TpvCoffeeProjectTeamApp](#tpvcoffeeprojectteamapp)
+    - [what is this](#what-is-this)
+    - [the app](#the-app)
+    - [used libraries, guides, etc.](#used-libraries-guides-etc)
+        - [libraries](#libraries)
+        - [guides](#guides)
+        - [other resources](#other-resources)
+    - [on angular-cli](#on-angular-cli)
+        - [development server](#development-server)
+        - [code scaffolding](#code-scaffolding)
+        - [build](#build)
+        - [running unit tests](#running-unit-tests)
+        - [running end-to-end tests](#running-end-to-end-tests)
+        - [deploying to github pages](#deploying-to-github-pages)
+        - [further help](#further-help)
+    - [installation](#installation)
+    - [configuration](#configuration)
+    - [development](#development)
+    - [code scaffolding](#code-scaffolding-1)
+    - [build](#build-1)
+    - [tests](#tests)
+        - [unit tests](#unit-tests)
+        - [e2e tests](#e2e-tests)
+    - [deploying to github pages](#deploying-to-github-pages-1)
+    - [further help](#further-help-1)
+    - [using @angular/flex-layout module](#using-angularflex-layout-module)
+        - [fast start](#fast-start)
+        - [npm](#npm)
+        - [application usages](#application-usages)
+        - [further help](#further-help-2)
+    - [credits](#credits)
+    - [license](#license)
+
+<!-- /TOC -->
 
 ## what is this
 coffee project is a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
@@ -63,6 +98,40 @@ while the demo of the seed application can be found at [https://fir-todo-v3.fire
 ### other resources
  * [firebase](https://firebase.google.com/)
  * [material design](https://www.google.com/design/spec/material-design/)
+
+---
+
+## on angular-cli
+
+this project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+
+### development server
+run `ng serve` for a dev server. navigate to `http://localhost:4200/`. the app will automatically reload if you change any of the source files.
+
+### code scaffolding
+
+run `ng generate component component-name` to generate a new component. you can also use `ng generate directive/pipe/service/class/module`.
+
+### build
+
+run `ng build` to build the project. the build artifacts will be stored in the `dist/` directory. use the `-prod` flag for a production build.
+
+### running unit tests
+
+run `ng test` to execute the unit tests via [karma](https://karma-runner.github.io).
+
+### running end-to-end tests
+
+run `ng e2e` to execute the end-to-end tests via [protractor](http://www.protractortest.org/).
+before running the tests make sure you are serving the app via `ng serve`.
+
+### deploying to github pages
+
+run `ng github-pages:deploy` to deploy to github pages.
+
+### further help
+
+to get more help on the `angular-cli` use `ng help` or go check out the [angular-cli readme](https://github.com/angular/angular-cli/blob/master/readme.md).
 
 ---
 
@@ -230,37 +299,6 @@ to get more help on the installation and use of @angular/flex-layout check out [
 ---
 
 ## license
+
 [the mit license (mit)](license)
 
-
-
-
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
-
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
