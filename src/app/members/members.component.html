@@ -2,7 +2,7 @@
   <div class="column">
     <h2>Hey {{ name.auth.displayName }}!</h2>
     <img src="./../../assets/rafszul.svg" />
-    <button (click)="logout()" class="basic-btn">Logout</button>
+    <button (click)="logout()" class="hollow button">Logout</button>
     <ul>
       <li class="text" *ngFor="let item of items | async">
         {{item.$value}}
