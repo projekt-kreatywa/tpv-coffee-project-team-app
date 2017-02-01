@@ -23,6 +23,15 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ChatComponent } from './chat/chat.component';
+import { EspressoJournalComponent } from './journals/espresso-journal/espresso-journal.component';
+import { FilterJournalComponent } from './journals/filter-journal/filter-journal.component';
+import { CoffeeBrewingComponent } from './guides/coffee-brewing/coffee-brewing.component';
+import { TeaBrewingComponent } from './guides/tea-brewing/tea-brewing.component';
+import { FoodPreparationComponent } from './guides/food-preparation/food-preparation.component';
+import { OurCoffeesComponent } from './guides/our-coffees/our-coffees.component';
+import { OurTeasComponent } from './guides/our-teas/our-teas.component';
+import { ContactsComponent } from './guides/contacts/contacts.component';
+import { StocklistComponent } from './stocklist/stocklist.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +43,17 @@ import { ChatComponent } from './chat/chat.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ChatComponent
+    ChatComponent,
+    EspressoJournalComponent,
+    FilterJournalComponent,
+    CoffeeBrewingComponent,
+    TeaBrewingComponent,
+    FoodPreparationComponent,
+    OurCoffeesComponent,
+    OurCoffeesComponent,
+    OurTeasComponent,
+    ContactsComponent,
+    StocklistComponent
   ],
   imports: [
     BrowserModule,
