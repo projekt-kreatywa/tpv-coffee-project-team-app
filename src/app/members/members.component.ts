@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { AngularFire, AuthProviders, AuthMethods, FirebaseListObservable } from 'angularfire2';
 import { Router } from '@angular/router';
 import { moveIn, fallIn, moveInLeft } from '../router.animations';
 
@@ -17,6 +17,7 @@ export class MembersComponent implements OnInit {
 
   name: any;
   state: string = '';
+  items: FirebaseListObservable<any[]>;
 
   constructor(public af: AngularFire, private router: Router) {
 
@@ -25,6 +26,7 @@ export class MembersComponent implements OnInit {
         this.name = auth;
       }
     });
+    this.items = af.database.list('/items');
 
   }
 
