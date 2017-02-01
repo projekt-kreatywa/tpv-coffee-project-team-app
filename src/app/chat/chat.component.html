@@ -1,19 +1,15 @@
-<p>
-    chat works!
-</p>
 <div class="row">
     <div class="column">
-        <h2>Hey {{ name.auth.displayName }}!</h2>
+        <h4>hey {{ name.auth.displayName }}! below you'll find 20 most recent messages</h4>
         <div class="chat-container" *ngFor="let item of items | async">
             <a href="#">{{item.name}}</a>
 
             <p>{{item.message}}</p>
         </div>
 
-        <div class="chat-container">
+        <input type="text" id="message" *ngIf="name" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
 
-            <input type="text" id="message" *ngIf="name" placeholder="chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
 
-        </div>
+
     </div>
 </div>

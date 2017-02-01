@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { AngularFire, AuthProviders, AuthMethods, FirebaseListObservable } from 'angularfire2';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,10 +9,17 @@ import { Router } from '@angular/router';
 })
 export class ChatComponent implements OnInit {
 
+  items: FirebaseListObservable<any>;
   name: any;
-  state: string = '';
+  msgVal: string = '';
 
   constructor(public af: AngularFire, private router: Router) {
+
+    this.items = af.database.list('/messages', {
+      query: {
+        limitToLast: 20
+      }
+    });
 
     this.af.auth.subscribe(auth => {
       if (auth) {
@@ -27,6 +34,11 @@ export class ChatComponent implements OnInit {
     console.log('logged out');
     this.router.navigateByUrl('/login');
   }
+
+  chatSend(theirMessage: string) {
+    this.items.push({ message: theirMessage, name: this.name.auth.displayName});
+    this.msgVal = '';
+}
 
   ngOnInit() {
   }
