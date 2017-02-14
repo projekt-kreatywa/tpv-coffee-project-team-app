@@ -1,26 +1,29 @@
-<md-card *ngFor="let item of items | async">
-    <md-card-header>
+<!--<md-card *ngFor="let item of items | async">-->
+<div class="row">
+    <md-card *ngFor="let item of items | async" class="small-12 medium-6 large-6 columns">
+        <md-card-header>
 
-        <md-card-title>
-            <h5>#{{ item.id }} - {{ item.name }}</h5>
-        </md-card-title>
-        <img md-card-avatar src="{{ item.img }}">
-        <!--<img md-card-md-image src="./../../../assets/__pckg/IMNGN 16-1-17 5.28.13.svg">-->
+            <md-card-title>
+                <h5>#{{ item.id }} - {{ item.name }}</h5>
+            </md-card-title>
+            <img md-card-avatar src="{{ item.img }}">
+            <!--<img md-card-md-image src="./../../../assets/__pckg/IMNGN 16-1-17 5.28.13.svg">-->
 
-    </md-card-header>
-    <img md-card-image src="{{ item.img }}">
-    <md-card-content>
-        <h5><small>{{ item.type }} - {{ item.orgin }}
+        </md-card-header>
+        <img md-card-image src="{{ item.img }}">
+        <md-card-content>
+            <h5><small>{{ item.type }} - {{ item.orgin }}
           </small></h5>
-        <p>{{ item.flavournotes }}</p>
-        <p>{{ item.description }}</p>
-        <div>
-            <h5>Brewing method:</h5>
-            <ul>
-                <li>Tea leaves: {{ item.brewmethod.tealeaves }}</li>
-                <li>Water temp: {{ item.brewmethod.watertemperature }}</li>
-                <li>Brewing time: {{ item.brewmethod.brewtime }}</li>
-            </ul>
-        </div>
-    </md-card-content>
-</md-card>
+            <p>{{ item.flavournotes }}</p>
+            <p>{{ item.description }}</p>
+            <div>
+                <h5>Brewing method:</h5>
+                <ul>
+                    <li>Tea leaves: {{ item.brewmethod.tealeaves }}</li>
+                    <li>Water temp: {{ item.brewmethod.watertemperature }}</li>
+                    <li>Brewing time: {{ item.brewmethod.brewtime }}</li>
+                </ul>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>
