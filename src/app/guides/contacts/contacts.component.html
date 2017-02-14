@@ -1,3 +1,26 @@
-<p>
-  contacts works!
-</p>
+<!--<div class="row small-up-2 medium-up-3">-->
+<md-card>Below you'll find most important contacts:</md-card>
+
+<md-card>
+    <div class="row">
+        <md-card *ngFor="let item of items | async" class="small-12 medium-6 large-6 columns">
+            <md-card-header>
+                <md-card-title>
+                    <h5>{{ item.name }}</h5>
+                </md-card-title>
+                <img md-card-avatar src="{{ item.img }}">
+            </md-card-header>
+            <img md-card-image src="{{ item.img }}">
+            <md-card-content>
+                <h5><small>{{ item.phone }}</small></h5>
+                <p>email: {{ item.email }}</p>
+            </md-card-content>
+
+            <md-card-actions>
+                <button md-button><md-icon>email</md-icon> Email {{ item.name }}</button>
+                <button md-button><md-icon>call</md-icon> Call {{ item.name }}</button>
+            </md-card-actions>
+        </md-card>
+
+    </div>
+</md-card>

@@ -11,6 +11,8 @@ import { moveIn, fallIn, moveInLeft } from '../router.animations';
 })
 export class HomeComponent implements OnInit {
 
+  title = 'home';
+
   constructor() { }
 
   ngOnInit() {

@@ -1,14 +1,19 @@
 <div class="row">
     <div class="column">
-        <h4>hey {{ name.auth.displayName }}! below you'll find 20 most recent messages</h4>
-        <div class="chat-container" *ngFor="let item of items | async">
-            <a href="#">{{item.name}}</a>
+        <md-card>
+            <h4>hey {{ name.auth.displayName }}! below you'll find 20 most recent messages</h4>
+        </md-card>
+        <md-card>
+            <div class="chat-container" *ngFor="let item of items | async">
+                <a href="#">{{item.name}}</a>
 
-            <p>{{item.message}}</p>
-        </div>
+                <p>{{item.message}}</p>
+            </div>
+        </md-card>
+        <md-card>
 
-        <input type="text" id="message" *ngIf="name" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
-
+            <input type="text" id="message" *ngIf="name" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
+        </md-card>
 
 
     </div>

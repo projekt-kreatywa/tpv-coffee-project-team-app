@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
+import {MdIconRegistry} from '@angular/material';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+        'rafszul',
+        sanitizer.bypassSecurityTrustResourceUrl('./../../../assets/rafszul.svg'));
+  }
 
   ngOnInit() {
   }
